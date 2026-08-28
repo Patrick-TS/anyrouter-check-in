@@ -5,7 +5,7 @@ from __future__ import annotations
 import os
 
 
-def get_proxy_server(*, use_proxy: bool = True) -> str | None:
+def get_proxy_server(*, use_proxy=False) -> str | None:
 	"""按平台配置读取 CHECKIN_PROXY_URL；use_proxy=False 时不返回代理地址。"""
 	if not use_proxy:
 		return None
